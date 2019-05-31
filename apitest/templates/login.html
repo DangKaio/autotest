@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>自动化测试平台</h1>
+
+<form method="post" action="/login/">
+    {% csrf_token %}
+    <br> 用户名：<input name="username" type="text" placeholder="请输入用户名">
+    <br> 密&nbsp;&nbsp;码：<input name="password" type="password" placeholder="请输入密码">
+    {{ error }}<br>
+    <br> <button id="submit" type="submit">登录</button>
+</form>
+
+</body>
+</html>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
